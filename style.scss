@@ -1,0 +1,81 @@
+//Variable
+$color-1: purple;
+
+table {
+      border: 2px solid black;
+      border-collapse: collapse;
+      width: 50%;
+}
+
+//Selectors
+th,td {
+      border: 1px solid black;
+      padding: 5px;
+      text-align: center;
+}
+
+tr th {
+      font-size: 18px;
+}
+
+tr > td {
+      font-style: italic;
+}
+
+a:visited {
+  color: $color-1;
+}
+
+a:hover {
+  color: orange;
+}
+
+//Class
+.bottom-font {
+  color: white;
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+}
+
+//ID
+#contactbar {
+  color: rgb(99,99,99)
+}
+
+//Media Query
+@media(min-width:800px) {
+    h1::before {
+    content:"INFORMATIKA AGENCY";
+    }
+}
+
+@media(max-width:799px) {
+    h1::before {
+    content:"INFORMATIKA";
+    }
+}
+
+//Nesting
+ul {
+  ul {
+    li {
+      font-style: italic;
+    };
+  };
+}
+
+//Inheritance
+%title2{
+  font-weight:bolder;
+}
+
+.title2-col1{
+  @extend %title2;
+  color: rgb(68,61,138);
+}
+
+.title2-col2{
+  @extend %title2;
+  color: rgb(100,99,117);
+}

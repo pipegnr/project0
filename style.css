@@ -1,0 +1,64 @@
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+tr th {
+  font-size: 18px;
+}
+
+tr > td {
+  font-style: italic;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: orange;
+}
+
+.bottom-font {
+  color: white;
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+}
+
+#contactbar {
+  color: #636363;
+}
+
+@media (min-width: 800px) {
+  h1::before {
+    content: "INFORMATIKA AGENCY";
+  }
+}
+@media (max-width: 799px) {
+  h1::before {
+    content: "INFORMATIKA";
+  }
+}
+ul ul li {
+  font-style: italic;
+}
+
+.title2-col2, .title2-col1 {
+  font-weight: bolder;
+}
+
+.title2-col1 {
+  color: #443d8a;
+}
+
+.title2-col2 {
+  color: #646375;
+}
